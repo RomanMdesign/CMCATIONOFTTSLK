@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #2f3749 transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+*::-webkit-scrollbar-thumb {
+  background: #2f3749;
+  border-radius: 3px;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+#root {
+  height: 100vh;
+}
+
+.focus-ring:focus-visible {
+  outline: 2px solid #5c7cfa;
+  outline-offset: 2px;
+}
+
+.message-content a {
+  color: #91a7ff;
+  text-decoration: underline;
+}
+.message-content strong {
+  font-weight: 600;
+}
+
+.speaking {
+  box-shadow: 0 0 0 2px #22c55e;
+}
+
+.channel-item {
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+.community-icon {
+  transition: border-radius 0.2s ease, transform 0.15s ease;
+}
+.community-icon:hover {
+  border-radius: 30%;
+  transform: scale(1.05);
+}
+.community-icon.active {
+  border-radius: 30%;
+}
+
+html:not(.dark) {
+  color-scheme: light;
+}
+html:not(.dark) body {
+  @apply bg-slate-100 text-slate-900;
+}
+html:not(.dark) .bg-surface-0 {
+  background-color: #f8fafc;
+}
+html:not(.dark) .bg-surface-1 {
+  background-color: #f1f5f9;
+}
+html:not(.dark) .bg-surface-2 {
+  background-color: #e2e8f0;
+}
+html:not(.dark) .bg-surface-3 {
+  background-color: #cbd5e1;
+}
+html:not(.dark) .text-slate-100 {
+  color: #0f172a;
+}
+html:not(.dark) .text-slate-300 {
+  color: #334155;
+}
+html:not(.dark) .text-slate-400 {
+  color: #64748b;
+}
+html:not(.dark) .border-surface-4 {
+  border-color: #cbd5e1;
+}
