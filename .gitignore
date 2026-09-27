@@ -1,0 +1,14 @@
+node_modules/
+dist/
+build/
+.env
+*.db
+*.db-journal
+uploads/
+.DS_Store
+*.log
+.vite/
+coverage/
+.idea/
+.vscode/
+*.local
